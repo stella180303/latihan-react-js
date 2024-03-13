@@ -20,13 +20,20 @@ function App() {
     
 
      {/* 
-     <UserGreeting />
-    <ParentComponent />
-    <EventBind />
-    <FunctionClick />
-    <ClassClick />
-    <Counter />
+    Conditional Rendering : <UserGreeting />
+    
+    Methods as props : <ParentComponent />
+    
+    Binding Event Handler : <EventBind />
+    
+    Event Handling : 
+      - <FunctionClick />
+      - <ClassClick />
+    
+    setState : <Counter />
+    
     <h1>State</h1>
+    
     <Message /> 
      functional component
       <Welcome  />

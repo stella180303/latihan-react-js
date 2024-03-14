@@ -12,14 +12,40 @@ import EventBind from './Components/EventBind';
 import ParentComponent from './Components/ParentComponent';
 import UserGreeting from './Components/UserGreeting';
 import NameList from './Components/NameList';
+import NameListKey from './Components/NameListKey';
+import Stylesheet from './Components/Stylesheet';
+import Inline from './Components/Inline';
+import styles from './appStyles.module.css'
+import './appStyles.css';
+import Form from './Components/Form';
+
 function App() {
   return (
     <div className="App">
     
-    <NameList />
+    <Form />
+   
+     {/* 
+
+
     
 
-     {/* 
+    Styling and css basics :
+    - <Stylesheet primary={true} />
+    - <Inline />
+
+     // stylesheet biasa
+    <h1 className='error'>
+      Error
+    </h1>
+
+    // Stylesheet module
+    <h1 className={styles.success}>
+      Successss
+    </h1>
+
+    KeyProps at list rendering : <NameListKey />
+    List Rendering : <NameList />
     Conditional Rendering : <UserGreeting />
     
     Methods as props : <ParentComponent />

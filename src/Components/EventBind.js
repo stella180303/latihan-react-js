@@ -19,6 +19,7 @@ class EventBind extends Component {
 //     })
 //   }
 
+//  mengubah metode function menggunakan arrow (=>)
     clickHandler =() =>{
         this.setState({
             message:'goodbye'

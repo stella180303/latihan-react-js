@@ -15,6 +15,7 @@ class ParentComponent extends Component {
       this.greetParent = this.greetParent.bind(this)
     }
     
+    //buat function greetparent untuk munculin alert
     greetParent(){
         alert(`Hello ${this.state.parentName}`)
     }

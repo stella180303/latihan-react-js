@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Hello from './Components/Hello';
 import Welcome from './Components/Welcome';
-import { Component } from 'react';
+import { Component, Fragment, PureComponent } from 'react';
 import Message from './Components/Message';
 import Counter from './Components/Counter';
 import FunctionClick from './Components/FunctionClick';
@@ -18,17 +18,44 @@ import Inline from './Components/Inline';
 import styles from './appStyles.module.css'
 import './appStyles.css';
 import Form from './Components/Form';
+import LifecycleA from './Components/LifecycleA';
+import LifecycleB from './Components/LifecycleB';
+import Fragmentdemo from './Components/Fragmentdemo';
+import Table from './Components/Table';
+import Purecomponent from './Components/Purecomponent';
+import ParentComp from './Components/ParentComp';
+import RefsDemo from './Components/RefsDemo';
+import Focusinput from './Components/Focusinput';
+import FRParentInput from './Components/FRParentInput';
 
 function App() {
   return (
     <div className="App">
     
-    <Form />
+    
+    <FRParentInput />
    
+
      {/* 
 
+    Refs (Class component) :<Focusinput />
 
+    Refs (functional component) : <RefsDemo />
+
+    React Memo : <ParentComp />
+
+    React Fragment :
+    <Fragmentdemo />
+    <Table />
+
+    Lifecycle Methods :
+     *ParentComponent*
+    <LifecycleA />
     
+    *Child component*
+    <LifecycleB />
+
+    Basic form handling : <Form />
 
     Styling and css basics :
     - <Stylesheet primary={true} />
